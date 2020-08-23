@@ -1,6 +1,13 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3.0 + Vite" />
+<main class='min-h-screen grid place-center'>
+  <header class='w-full flex flex-col items-center'>
+    <h1 class='text-5xl font-semibold tracking-wide'>NÜE</h1>
+    <img alt="Nue logo" src="./assets/Nue.svg" class='logo w-2/3 sm:w-1/3 lg:w-1/4 py-8'/>
+    <h2 class='font-light text-center'>
+      A <span class="font-normal text-aurora-2">Nordic</span> UI Theme for Vue and TailwindCSS.
+    </h2>
+  </header>
+</main>
 </template>
 
 <script>
@@ -13,3 +20,13 @@ export default {
   }
 }
 </script>
+
+<style lang='postcss'>
+body {
+  background: #242933;
+  @apply text-snow-0;
+}
+.logo {
+  filter: drop-shadow(0px 3px 6px rgba(15, 17, 21, 0.2) );
+}
+</style>
