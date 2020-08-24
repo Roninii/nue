@@ -17,7 +17,10 @@
         </router-link>
       </NButton>
     </header>
-    <main></main>
+    <main class="px-4">
+      👷🏻‍♂️ Everything here is under active development, so you may not find
+      everything you're looking for right now. Be sure to check back soon!
+    </main>
   </main>
 </template>
 
