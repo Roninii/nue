@@ -1,19 +1,25 @@
 <template>
-  <header class="h-16">
+  <header class="h-16 flex justify-center">
     <img
       src="@/assets/Nue.svg"
       alt="Nue logo"
-      class="hidden lg:block h-full p-4"
+      :class="[isHome ? 'hidden' : 'block', 'h-full', 'p-4']"
     />
   </header>
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, onMounted, computed } from "vue";
+import { useRoute } from "vue-router";
 
 export default defineComponent({
   setup() {
-    return {};
+    const route = useRoute();
+    const isHome = computed(() => route.name === "Home");
+
+    return {
+      isHome
+    };
   }
 });
 </script>
