@@ -11,15 +11,32 @@
         A <span class="font-normal text-frost-1">Nordic</span> UI Theme for Vue
         and TailwindCSS.
       </h2>
+      <NButton class="my-4" @click="handleClick">
+        Get Started
+      </NButton>
     </header>
+    <main></main>
   </main>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import NButton from "@/components/buttons/NButton.vue";
 
 export default defineComponent({
-  name: "App"
+  name: "App",
+  components: {
+    NButton
+  },
+  setup() {
+    const handleClick = () => {
+      console.log("click");
+    };
+
+    return {
+      handleClick
+    };
+  }
 });
 </script>
 

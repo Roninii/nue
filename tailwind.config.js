@@ -29,7 +29,10 @@ module.exports = {
       }
     }
   },
-  variants: {},
+  variants: {
+    cursor: ["responsive", "hover", "focus", "disabled"],
+    opacity: ["disabled"]
+  },
   plugins: [
     plugin(function({ addUtilities }) {
       const newUtilities = {
