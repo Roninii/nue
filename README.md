@@ -1,4 +1,4 @@
-# nordbook
+# Nue
 
 ## Project setup
 ```
